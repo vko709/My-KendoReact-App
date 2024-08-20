@@ -37,8 +37,8 @@
 .svg{
   position: absolute;
   width: 1rem;
-  top: 23%;
-  right: 1%;
+  top: 27%;
+  right: 2%;
 }
 
 .file2 {
@@ -58,13 +58,13 @@
 }
 
 .search-input {
-  width: 95%;
+  width: 100%;
   padding: 2%;
   margin: auto;
 }
 
 .search-icon {
-  @apply absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500;
+  @apply inset-y-0 left-0 flex items-center pl-3 text-gray-500;
 }
 
 .results-container {
@@ -77,16 +77,20 @@
 }
 
 .result-grid {
-  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+  // @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
 }
 
 .result-card {
   // @apply p-4 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-white;
   box-shadow: 0 2px 4px rgba(128, 128, 128, 0.5);
-  margin-bottom: 0.7rem;
-  padding: 10px;
-  display: flex;
-  position: relative;
+    margin-bottom: 0.7rem;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
 }
 
 .result-link {
