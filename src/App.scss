@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #151950;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.containerapp{
+    // margin-top: 10%;
+    width: 35rem;
+    margin: 10% auto 0;
+    padding: 2rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.svg{
+  position: absolute;
+  width: 1rem;
+  top: 23%;
+  right: 1%;
+}
+
+.file2 {
+  position: absolute;
+  right: 1%;
+  width: 1.3rem;
+}
+
+#file {
+  background-color: red;
+}
+
+/* SearchComponent.scss */
+
+.search-input-container {
+  position: relative;
+}
+
+.search-input {
+  width: 95%;
+  padding: 2%;
+  margin: auto;
+}
+
+.search-icon {
+  @apply absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500;
+}
+
+.results-container {
+  @apply w-full max-w-lg;
+}
+
+.result-count {
+  @apply text-gray-600 mb-4;
+  text-align: right;
+}
+
+.result-grid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}
+
+.result-card {
+  // @apply p-4 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-white;
+  box-shadow: 0 2px 4px rgba(128, 128, 128, 0.5);
+  margin-bottom: 0.7rem;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.result-link {
+  @apply text-blue-600 text-lg font-semibold hover:underline;
+}
+
+.result-description {
+  @apply text-gray-600;
+}
